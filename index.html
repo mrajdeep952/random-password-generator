@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        
+        <h1>PASSWORD GENERATOR</h1>
+
+        <div class="display-container">
+
+            <input type="text" readonly placeholder="password" class="display" dataPasswordDisplay>
+
+            <button class="copybtn" data-copy onclick="copyPassword()">
+                <span class="msg" data-copy-message></span>
+                <img src="copy.svg" alt="copy" height="25px" width="25px">
+            </button>
+
+        </div>
+
+        <div class="input-container">
+
+            <div class="length-container">
+
+                <p>Password Length</p>
+
+                <p lenght-number>0</p>
+
+            </div>
+
+            <!-- slider -->
+
+            <input type="range" min="1" max="20" step="1" class="slider" length-slider>
+
+            <!-- checkboxes -->
+            <div class="check">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes Uppercase Letter</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes Lowercase Letter</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes Numbers </label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes Symbols</label>
+            </div>
+
+            <!-- strength section -->
+
+            <div class="strength-container">
+                <p>strength</p>
+                <div class="indicator" data-indicator></div>
+            </div>
+
+            <button class="generateButton">Generate Password</button>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
