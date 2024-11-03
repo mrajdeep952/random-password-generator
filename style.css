@@ -55,11 +55,12 @@ h1{
     transform: scale(1);
 }
 
-/* .copybtn{
-    background-color: transparent;
+.copybtn{
+    /* background-color: transparent; */
+    cursor: pointer;
     border: none;
     outline: none;
-} */
+}
 .display{
 
     width: 100%;
