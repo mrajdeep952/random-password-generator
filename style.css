@@ -173,3 +173,8 @@ h1{
     box-shadow: 1px 0px 20px 0px red;
     transition: all 100ms ease-in;
 } */
+
+input:focus {
+    outline: none; 
+    border: none; 
+}
